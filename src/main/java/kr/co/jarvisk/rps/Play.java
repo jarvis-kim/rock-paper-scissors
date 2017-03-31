@@ -48,6 +48,10 @@ public class Play {
         return Stream.of(others).map(playLoad -> playLoad.player).toArray(Player[]::new);
     }
 
+    public RockPaperScissorsResult getResult() {
+        return result;
+    }
+
     static class PlayLoad {
         private RockPaperScissors rps;
 
